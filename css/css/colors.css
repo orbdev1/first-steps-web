@@ -1,0 +1,59 @@
+.color-by-name {
+    background-color: coral;
+    color: rebeccapurple;
+    border: thick solid greenyellow;
+}
+
+.color-hex {
+    background-color: #ff6600;
+    color: rebeccapurple;
+    border: thick solid greenyellow;
+    border: thick solid #ff0000;
+    border: thick solid #0009;
+}
+
+.color-rgb {
+    background-color: rgb(255, 255, 255);
+    background-color: rgb(255, 0, 0);
+    background-color: rgb(0, 255, 0);
+    background-color: rgb(0, 0, 255);
+    background-color: rgb(0, 0, 0, 0.9);
+    color: rgb(255, 123, 0);
+    border: thick solid rgb(255, 120, 50);
+}
+
+/*
+HSL - HueSaturationLightness (Tono-Saturación-Luminosidad)
+
+Primer valor es Hue (Ciruclo Cromatico)
+0° -> Red
+60° -> Yellow
+120° -> Green
+180° -> Cyan
+240° ->Blue
+300° ->Magenta
+*/
+
+.color-hsl {
+    background-color: hsl(0, 100%, 50%);
+    background-color: hsl(120, 100%, 50%);
+    background-color: hsl(300, 100%, 50%, 0.3);
+    color: rebeccapurple;
+    border: thick solid greenyellow;
+}
+
+.color-transparent-current {
+    background-color: darkviolet;
+    background-color: transparent;
+    /* background-color: currentColor; */
+    color: olive;
+    border: thick solid currentColor ;
+}
+
+.opacity {
+    background-color: orchid;
+    color: navy;
+    border: thick solid black;
+    opacity: 0.5;
+    opacity: 0.1;
+}

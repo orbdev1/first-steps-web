@@ -1,0 +1,62 @@
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+.box {
+    border: thick solid black;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 5rem;
+}
+
+.shadows {
+    color: navy;
+    font-size: 2rem;
+    text-align: center;
+    /* box-shadow: x y blur-radius spread-blur color inset/outset; */
+    box-shadow: 1rem 1rem 1rem 1rem navy;
+    box-shadow: 1rem 1rem 1rem 1rem #00000050;
+    box-shadow: 1rem 1rem 1rem 1rem #f60 inset;
+    box-shadow: 1rem 1rem 2rem 0.5rem #0007;
+    /* text-shadow: x y blur-radius color; */
+    text-shadow: -1rem -1rem 0.5rem hotpink;
+}
+
+.shadows-multiple {
+    font-size: 2rem;
+    text-align: center;
+    box-shadow: 1rem 1rem 1rem 1rem #00000050, 1rem 1rem 1rem 1rem #f60 inset,
+    -0.5rem -0.5rem 0.5rem 2rem hotpink;
+    text-shadow: -1rem -1rem 0.5rem hotpink, 1rem 1rem .5rem green;
+}
+
+.drop-shadow {
+    width: 600px;
+    height: auto;
+}
+
+.drop-shadow img{
+    max-width: 100%;
+    box-shadow: 1rem 1rem 2rem 0.5rem #0007;
+    filter: drop-shadow(-1rem -1rem 0.5rem hotpink)
+}
+
+.linear-gradient {
+    background-image: linear-gradient(135deg, red, green);
+    background-image: linear-gradient(360deg, red, green, blue);
+    background-image: linear-gradient(to right, red, green, blue);
+    background-image: linear-gradient(to bottom, red, green, blue);
+    background-image: linear-gradient(to top left, red, green, blue);
+    background-image: linear-gradient(to top left, red 15%, green 16% 66%, blue 67%);
+
+}

@@ -1,0 +1,230 @@
+@import url(otra-hoja.css);
+
+h1{
+    color: aqua;
+    background-color: black;
+    text-align: center;
+
+}
+
+
+p{
+    color: green;
+}
+
+#parrafo-dos{
+    background-color: skyblue;
+}
+
+.hijos-directos > li {
+    background-color: thistle;
+}
+
+.hijos-descendientes b {
+    background-color: thistle;
+}
+
+
+/* Selectores de hermanos aplicaran a elementos que son hermanos y que estén debajo del elemento elegido*/
+.hermanos-general ~ li {
+    background-color: thistle;
+}
+
+.hermanos-adyacentes + li {
+    background-color: thistle;
+}
+
+/*Selectores de atributos*/
+
+.selectores-atributos a[href]{
+    color: orange;
+}
+
+.selectores-atributos a[target="_blank"]{
+    font-weight: bold;
+}
+
+/*El caracter * aplica el estilo si la cadena coincide con el atributo en cualquier parte*/
+
+.selectores-atributos a[href*="jonmircha"]{
+    font-size: 24px;
+}
+
+/*El caracter ^ aplica el estilo si la cadena coincide con el atributo al inicio*/
+.selectores-atributos a[href^="http:"]{
+    text-decoration: none;
+}
+
+/*El caracter $ aplica el estilo si la cadena coincide con el atributo al final*/
+.selectores-atributos a[href$=".com"]{
+    background-color: black;
+}
+
+/*El caracter ~ aplica el estilo si contiene la cadena en cuestion en una
+lista separada por espacios*/
+.selectores-atributos a[class~="cursos"]{
+    background-color: midnightblue;
+}
+
+/*El caracter | aplica el estilo si contiene la cadena en cuestion en una
+lista separada por espacios y que despues del texto evaluado tenga un guion a la derecha */
+.selectores-atributos a[class|="menu"]{
+    font-style: italic;
+} 
+
+/* Selector Universal */
+
+*{
+    font-family: sans-serif;
+}
+
+.selector-universal *{
+    font-size: 24px;
+}
+
+/*
+Pseudoclases - Dan estilos dependiendo del contexto, posición o estado del elemento 
+*/
+
+.form-pseudoclases *:required {
+    border-color: yellow;
+}
+
+.form-pseudoclases *:valid {
+    border-color: green;
+}
+
+.form-pseudoclases *:invalid {
+    border-color: red;
+}
+
+.form-pseudoclases *:focus {
+    background-color: skyblue;
+}
+
+.form-pseudoclases *:disabled {
+    background-color: pink;
+}
+
+.menu-pseudoclases a:visited{
+    color: olive;
+}
+.menu-pseudoclases a:hover{
+    color: orange;
+}
+
+.p-pseudoclases:hover{
+    font-size: 24px;
+}
+
+#temario-css:target{
+    background-color: green;
+}
+
+.lista-pseudoclases li:first-child{
+    color: green;
+}
+
+.lista-pseudoclases li:last-child{
+    color: violet;
+}
+
+.lista-pseudoclases li:nth-child(3){
+    color: orange;
+}
+
+.lista-pseudoclases li:nth-child(4n){
+    font-size: 20px;
+}
+
+.lista-pseudoclases li:nth-child(3n + 1){
+    font-weight: bold;
+}
+
+.lista-pseudoclases li:nth-child(even){
+    background-color: yellow;
+}
+
+.lista-pseudoclases li:nth-child(odd){
+    background-color: orange;
+}
+
+.articulo-pseudoclases p:first-of-type{
+   background-color: pink; 
+}
+
+.articulo-pseudoclases p:last-of-type{
+   background-color: violet; 
+}
+
+.articulo-pseudoclases p:nth-of-type(3){
+   background-color: fuchsia; 
+}
+
+.articulo-pseudoclases *:not(p) {
+    background-color: gray;
+}
+
+/*
+Pseudoelementos
+*/
+
+.saga-geminis::before {
+    content: "🤼";
+}
+
+.saga-geminis::after {
+    content: "♓";
+}
+
+.saga-precio::before{
+    content: "$";
+    font-weight: bold;
+}
+
+.saga-precio::after {
+    content: "USD";
+    font-weight: bold;
+}
+
+.p-pseudoelementos::first-letter {
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.p-pseudoelementos::first-line {
+    color: coral;
+}
+
+.input-pseudoelementos::placeholder {
+    color: green;
+}
+
+/*
+Agrupar Selectores
+*/
+
+.form-agrupar-selectores input[type="text"],
+.form-agrupar-selectores input[type="email"],
+.form-agrupar-selectores textarea {
+    border-color: yellow;
+    border-width: 2px;
+    border-style: dashed;
+    background-color: black;
+    font-size: 20px;
+    display: block;
+    width: 300px;
+}
+
+/*
+Algoritmo de CSS
+*/
+
+
+blockquote {
+    background-color: yellowgreen;
+}
+
+.cita-marco {
+    background-color: cornflowerblue
+}

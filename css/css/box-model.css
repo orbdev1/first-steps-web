@@ -1,0 +1,190 @@
+h1 {
+  height: 100px;
+  width: 500px;
+  color: aliceblue;
+  border-style: groove;
+
+  border-color: yellow;
+
+  border-bottom-color: red;
+
+  border: 20px solid green;
+  border-radius: 10px 20px 30px 40px;
+}
+
+body {
+  margin: 0;
+}
+
+.caja-uno,
+.caja-dos {
+  background-color: chocolate;
+  border: medium solid orange;
+
+  /*
+    Aplciacion de margin y padding
+    1 valor - todos los lados
+    2 valores - 
+    -primer valor es verticales
+    -segundo valor horizontales
+    3 valores -
+    -primer top
+    -segundo lados
+    -tercero bot
+    4 valores -
+    -primer top
+    -segundo right
+    -tercero bottom
+    -cuarto left
+    */
+
+  padding: 10px;
+  margin: 10px;
+  padding: 20px 40px;
+  margin: 40px 20px;
+  padding: 0 40px 20px;
+  margin: 50px 30px 0;
+  padding: 0 40px 20px 50px;
+  margin: 100px 50px 30px 0;
+}
+
+.caja-linea,
+.caja-bloque {
+  background-color: darkcyan;
+  color: white;
+  width: 500px;
+  height: 250px;
+  border: medium solid black;
+  padding: 16px;
+}
+
+.caja-bloque {
+  margin: 32px;
+}
+
+.caja-linea {
+  margin: 32px;
+}
+
+.caja-none,
+.caja-linea-bloque,
+.caja-hidden {
+  background-color: darkolivegreen;
+  color: white;
+  width: 500px;
+  height: 300px;
+  border: medium solid black;
+}
+
+.caja-linea-bloque {
+  display: inline-block;
+}
+
+.caja-none {
+  display: none;
+}
+
+.caja-hidden {
+  visibility: hidden;
+}
+
+.overflow {
+  background-color: aqua;
+  width: 200px;
+  height: 100px;
+  /*overflow: visible;
+    overflow: hidden;
+    overflow: scroll;
+    overflow: auto;
+    */
+  overflow-y: scroll;
+}
+
+/*
+Tamaño de caja
+*/
+
+.box-sizing-content,
+.box-sizing-border {
+  background-color: deepskyblue;
+  width: 500px;
+  height: 250px;
+  padding: 10px;
+  border: thick solid black;
+}
+
+.box-sizing-border {
+  box-sizing: border-box;
+}
+
+.container-col-3 {
+  background-color: burlywood;
+  width: 600px;
+  height: 300px;
+  margin-top: 20px;
+}
+
+.container-col-3 > * {
+  width: 200px;
+  border: thin solid red;
+  float: left;
+}
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/*
+  Floats
+  */
+
+.container-floats {
+  background-color: cornflowerblue;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.clearfix {
+  clear: both;
+}
+
+/*Colapse de margenes verticales*/
+
+.margin-collapse {
+  background-color: skyblue;
+}
+
+.margin-collapse section {
+  border: thin solid black;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.margin-collapse span {
+  border: thin solid black;
+  display: inline-block;
+  margin-right: 16px;
+  margin-left: 16px;
+}
+
+/*Centrado de caja*/
+.sitio-web {
+    border: thin solid black;
+    background-color: thistle;
+    width: 800px;
+    height: 1000px;
+    padding: 16px;
+    margin-left: auto;
+    margin-right: auto;
+}
