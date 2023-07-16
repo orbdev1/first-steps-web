@@ -1,62 +1,146 @@
 html {
-    box-sizing: border-box;
-    font-size: 16px;
-    font-family: sans-serif;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: sans-serif;
 }
 
 *,
 *::after,
 *::before {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 .box {
-    border: thick solid black;
-    margin-left: auto;
-    margin-right: auto;
-    width: 200px;
-    height: 200px;
-    margin-bottom: 5rem;
+  border: thick solid black;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  height: 200px;
+  margin-bottom: 5rem;
 }
 
 .shadows {
-    color: navy;
-    font-size: 2rem;
-    text-align: center;
-    /* box-shadow: x y blur-radius spread-blur color inset/outset; */
-    box-shadow: 1rem 1rem 1rem 1rem navy;
-    box-shadow: 1rem 1rem 1rem 1rem #00000050;
-    box-shadow: 1rem 1rem 1rem 1rem #f60 inset;
-    box-shadow: 1rem 1rem 2rem 0.5rem #0007;
-    /* text-shadow: x y blur-radius color; */
-    text-shadow: -1rem -1rem 0.5rem hotpink;
+  color: navy;
+  font-size: 2rem;
+  text-align: center;
+  /* box-shadow: x y blur-radius spread-blur color inset/outset; */
+  box-shadow: 1rem 1rem 1rem 1rem navy;
+  box-shadow: 1rem 1rem 1rem 1rem #00000050;
+  box-shadow: 1rem 1rem 1rem 1rem #f60 inset;
+  box-shadow: 1rem 1rem 2rem 0.5rem #0007;
+  /* text-shadow: x y blur-radius color; */
+  text-shadow: -1rem -1rem 0.5rem hotpink;
 }
 
 .shadows-multiple {
-    font-size: 2rem;
-    text-align: center;
-    box-shadow: 1rem 1rem 1rem 1rem #00000050, 1rem 1rem 1rem 1rem #f60 inset,
+  font-size: 2rem;
+  text-align: center;
+  box-shadow: 1rem 1rem 1rem 1rem #00000050, 1rem 1rem 1rem 1rem #f60 inset,
     -0.5rem -0.5rem 0.5rem 2rem hotpink;
-    text-shadow: -1rem -1rem 0.5rem hotpink, 1rem 1rem .5rem green;
+  text-shadow: -1rem -1rem 0.5rem hotpink, 1rem 1rem 0.5rem green;
 }
 
 .drop-shadow {
-    width: 600px;
-    height: auto;
+  width: 600px;
+  height: auto;
 }
 
-.drop-shadow img{
-    max-width: 100%;
-    box-shadow: 1rem 1rem 2rem 0.5rem #0007;
-    filter: drop-shadow(-1rem -1rem 0.5rem hotpink)
+.drop-shadow img {
+  max-width: 100%;
+  box-shadow: 1rem 1rem 2rem 0.5rem #0007;
+  filter: drop-shadow(-1rem -1rem 0.5rem hotpink);
 }
 
 .linear-gradient {
-    background-image: linear-gradient(135deg, red, green);
-    background-image: linear-gradient(360deg, red, green, blue);
-    background-image: linear-gradient(to right, red, green, blue);
-    background-image: linear-gradient(to bottom, red, green, blue);
-    background-image: linear-gradient(to top left, red, green, blue);
-    background-image: linear-gradient(to top left, red 15%, green 16% 66%, blue 67%);
+  background-image: linear-gradient(135deg, red, green);
+  background-image: linear-gradient(360deg, red, green, blue);
+  background-image: linear-gradient(to right, red, green, blue);
+  background-image: linear-gradient(to bottom, red, green, blue);
+  background-image: linear-gradient(to top left, red, green, blue);
+  background-image: linear-gradient(
+    to top left,
+    red 15%,
+    green 16% 66%,
+    blue 67%
+  );
+}
 
+.card {
+  border: thick solid #000;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5rem;
+  width: 600px;
+  height: 400px;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 0 50%;
+}
+
+.clip-path {
+  clip-path: circle();
+  clip-path: circle(2rem);
+  clip-path: circle(100px);
+  clip-path: circle(100px at top);
+  clip-path: circle(100px at bottom right);
+  clip-path: ellipse();
+  clip-path: ellipse(2rem 4rem at top left);
+  clip-path: ellipse(100px 50px at bottom left);
+  clip-path: ellipse(100px 50px at 18% 60);
+  clip-path: inset(2rem);
+  clip-path: inset(2rem 1rem);
+  clip-path: inset(3rem 2rem 1rem);
+  clip-path: inset(1rem round 2rem);
+  clip-path: inset(1rem round 2rem 4rem 6rem 8rem);
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+}
+
+.shapes {
+  border: thick solid black;
+  padding: 1rem;
+  margin: 0 auto 5rem;
+  max-width: 800px;
+  font-size: 1.25rem;
+}
+
+.shapes img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  object-position: 0 50%;
+}
+
+.shapes p {
+  text-align: justify;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.shape-1 {
+  margin: 4rem 2rem 4rem 0;
+  shape-outside: circle();
+  shape-outside: ellipse();
+  shape-outside: polygon(0 0, 100% 0, 50% 100%);
+  shape-outside: circle();
+}
+
+.shape-2 {
+  margin: 4rem 0 4rem 2rem;
+  shape-outside: ellipse();
+}
+
+.shape-3 {
+  margin: 2rem 6rem 2rem 0;
+  shape-outside: polygon(0 0, 100% 0, 50% 100%);
 }
